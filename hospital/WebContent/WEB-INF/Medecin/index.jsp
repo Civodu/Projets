@@ -42,7 +42,7 @@
 						
 
 
-							   <form  action="/ges_consultation/MedecinServlet" method="post" >
+							   <form  action="/ges_consultation/SevMedecin" method="post" >
 							        <input type="hidden" name="id" value="0">
 									<div class="form-group">
 										<label>Matricule</label>
@@ -148,10 +148,10 @@
 											    <td>${p.email}</td>
 											    <td>${p.dateNaissance}</td>
 											    <td>${p.grade}</td>
-												<td><a href="/ges_consultation/MedecinServlet?id=${p.id}&ins=delete&f=${p.matricule}" 
+												<td><a href="/ges_consultation/SevMedecin?id=${p.id}&ins=delete&f=${p.matricule}" 
 												class="btn btn-danger" >
 												<i class="glyphicon glyphicon-trash"></i></a> </td>
-												<td><a href="/ges_consultation/MedecinServlet?id=${p.id}&ins=modifier" 
+												<td><a href="/ges_consultation/SevMedecin?id=${p.id}&ins=modifier" 
 												class="btn btn-danger" >
 												<i class="glyphicon glyphicon-edit"></i></a> </td>
 				   

@@ -44,7 +44,7 @@
 					 	 <c:otherwise>
 					 	 <c:forEach items="${listeMedecins}" var="p">
 
-							   <form  action="/hospital/ServCaissier" method="post" >
+							   <form  action="/hospital/SevCaissier" method="post" >
 							   
 							        <input type="hidden" name="id" value="${p.id }">
 									<div class="form-group">

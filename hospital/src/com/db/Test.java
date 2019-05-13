@@ -18,7 +18,7 @@ public class Test {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			conn= (Connection) DriverManager.getConnection("jdbc:mysql://localhost/ges_cons","root","");
+			conn= (Connection) DriverManager.getConnection("jdbc:mysql://localhost/ges_consultation","root","");
 			etat=(Statement) conn.createStatement();
 			result = etat.executeQuery("SELECT matricule,nom,tel,dateNaisse FROM patient");
 			

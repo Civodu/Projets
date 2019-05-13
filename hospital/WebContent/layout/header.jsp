@@ -57,19 +57,17 @@
 		<ul class="nav menu">
 		
 		   
-			<li><a href="CassierServlet"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg>Caisse</a></li> 
-			<li><a href="MedecinServlet"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg>Medecin</a></li>
-			<li><a href="SpecialiteServlet"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg>Specialite</a></li>
+			<li><a href="SevCaissier"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg>Caisse</a></li> 
+			<li><a href="SevMedecin"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg>Medecin</a></li>
+			<li><a href="SevSpecialite"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg>Specialite</a></li>
 			<% if(email=="Caissier"){ %>
-			<li><a href="PatientServlet"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg>Patient</a></li>
+			<li><a href="SevPatient"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg>Patient</a></li>
 			
-			<li><a href="TicketServlet"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg>Ticket</a></li>
+			<li><a href="SevTicket"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg>Ticket</a></li>
 			<% } %>
 			<%if(email.equals("Medecin")){ %>
 			 <li><a href="#"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg>Consultation</a></li>
 			 <%} %>
-			
-			
 			
 			<li role="presentation" class="divider"></li>
 		</ul>

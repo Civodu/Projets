@@ -18,7 +18,7 @@ public class ConnexionBD {
     {
     	
          String connexionBase = "com.mysql.jdbc.Driver";
-         String url="jdbc:mysql://localhost:3306/ges_cons";
+         String url="jdbc:mysql://localhost:3306/ges_consultation";
          String login="root";
          String motdepass="";
          

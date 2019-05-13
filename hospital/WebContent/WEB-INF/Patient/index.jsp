@@ -27,10 +27,6 @@
 			</c:choose>
 			
 		</div>
-          
-
-				
-			
 		
 		<div class="row">
 			<div class="col-lg-12">
@@ -42,7 +38,7 @@
 						
 
 
-							   <form  action="/ges_consultation/PatientServlet" method="post" >
+							   <form  action="/ges_consultation/SevPatient" method="post" >
 							        <input type="hidden" name="id" value="0">
 									<div class="form-group">
 										<label>Matricule</label>
@@ -118,7 +114,6 @@
 						        <th data-field="matricule" data-sortable="true" >Matricule</th>
 						        <th data-field="nom" data-sortable="true">Prénom et Nom</th>
 						        <th data-field="tel"  data-sortable="true">Téléphone</th>
-						        
 						        <th data-field="naissance" data-sortable="true">Date Niassance</th>
 						        <th data-field="grade" data-sortable="true">Groupe Sanguin</th>
 						       
@@ -127,30 +122,25 @@
 							<tbody>
 					       <c:choose>
 	           
-	           
 									 <c:when test="${empty listeMedecins}">
 					   						<div class="alert alert-danger">liste vide</div>
 					 				 </c:when>
 					 				 <c:otherwise>
 					 			    	  <c:forEach items="${listeMedecins}" var="p">
 										      
-										      
 										      <tr>
-
 											    <td>${p.matricule}</td>
 											    <td>${p.nom}</td>
 											    <td>${p.tel}</td>
-											  
 											    <td>${p.dateNaissance}</td>
 											    <td>${p.groupeSanguin}</td>
-												<td><a href="/ges_consultation/PatientServlet?id=${p.id}&ins=delete&f=${p.matricule}" 
+												<td><a href="/ges_consultation/SevPatient?id=${p.id}&ins=delete&f=${p.matricule}" 
 												class="btn btn-danger" >
 												<i class="glyphicon glyphicon-trash"></i></a> </td>
-												<td><a href="/ges_consultation/PatientServlet?id=${p.id}&ins=modifier" 
+												<td><a href="/ges_consultation/SevPatient?id=${p.id}&ins=modifier" 
 												class="btn btn-danger" >
 												<i class="glyphicon glyphicon-edit"></i></a> </td>
-				   
-											  
+			
 											  </tr>
 										   </c:forEach>
 					 				 </c:otherwise>

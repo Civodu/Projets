@@ -38,7 +38,7 @@
 						
 
 
-							   <form  action="/ges_consultation/CassierServlet" method="post" >
+							   <form  action="/ges_consultation/SevCaissier" method="post" >
 							        <input type="hidden" name="id" value="0">
 									<div class="form-group">
 										<label>Matricule</label>
@@ -133,10 +133,10 @@
 											    <td>${p.email}</td>
 											    <td>${p.dateNaissance}</td>
 											
-												<td><a href="/ges_consultation/CassierServlet?id=${p.id}&ins=delete&f=${p.matricule}" 
+												<td><a href="/ges_consultation/SevCaissier?id=${p.id}&ins=delete&f=${p.matricule}" 
 												class="btn btn-danger" >
 												<i class="glyphicon glyphicon-trash"></i></a> </td>
-												<td><a href="/ges_consultation/CassierServlet?id=${p.id}&ins=modifier" 
+												<td><a href="/ges_consultation/SevCaissier?id=${p.id}&ins=modifier" 
 												class="btn btn-danger" >
 												<i class="glyphicon glyphicon-edit"></i></a> </td>
 

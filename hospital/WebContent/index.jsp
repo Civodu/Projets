@@ -12,7 +12,7 @@
             <div class="panel-heading">Se Connecter</div>
             <div class="panel-body">
             
-                <form role="form" action="/ges_consultation/LoginServlet"  method="post">
+                <form role="form" action="/ges_consultation/Login"  method="post">
                     <fieldset>
                         <div class="form-group">
                     <input class="form-control" placeholder="Saisir Votre Pseudo" name="email" type="email" autofocus="" required="">

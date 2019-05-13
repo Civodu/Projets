@@ -27,11 +27,6 @@
 			</c:choose>
 			
 		</div>
-          
-
-				
-			
-		
 		<div class="row">
 			<div class="col-lg-12">
 			  
@@ -49,7 +44,7 @@
 			</c:choose>
 
 
-							   <form  action="/ges_consultation/SpecialiteServlet" method="post" >
+							   <form  action="/ges_consultation/SevSpecialite" method="post" >
 							        <input type="hidden" name="id" value="0">
 									<div class="form-group">
 										<label>Nom</label>
@@ -102,10 +97,10 @@
 
 											    <td>${p.nom}</td>
 											    <td>${p.tarif}</td>
-											   	<td><a href="/ges_consultation/SpecialiteServlet?id=${p.id}&ins=delete&f=${p.nom}" 
+											   	<td><a href="/ges_consultation/SevSpecialite?id=${p.id}&ins=delete&f=${p.nom}" 
 												class="btn btn-danger" >
 												<i class="glyphicon glyphicon-trash"></i></a> </td>
-												<td><a href="/ges_consultation/SpecialiteServlet?id=${p.id}&ins=modifier" 
+												<td><a href="/ges_consultation/SevSpecialite?id=${p.id}&ins=modifier" 
 												class="btn btn-danger" >
 												<i class="glyphicon glyphicon-edit"></i></a> </td>
 				   

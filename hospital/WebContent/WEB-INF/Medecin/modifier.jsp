@@ -49,7 +49,7 @@
 					 	 <c:otherwise>
 					 			    	  <c:forEach items="${listeMedecins}" var="p">
 
-							   <form  action="/ges_consultation/MedecinServlet" method="post" >
+							   <form  action="/ges_consultation/SevMedecin" method="post" >
 							        <input type="hidden" name="id" value="${p.id }">
 									<div class="form-group">
 										<label>Matricule</label>

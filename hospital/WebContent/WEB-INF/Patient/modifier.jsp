@@ -27,11 +27,7 @@
 			</c:choose>
 			
 		</div>
-          
-
-				
-			
-		
+  
 		<div class="row">
 			<div class="col-lg-12">
 			   <div class="col-md-2"></div>
@@ -49,7 +45,7 @@
 					 	 <c:otherwise>
 					 			    	  <c:forEach items="${listeMedecins}" var="p">
 
-							   <form  action="/ges_consultation/PatientServlet" method="post" >
+							   <form  action="/ges_consultation/SevPatient" method="post" >
 							        <input type="hidden" name="id" value="${p.id }">
 									<div class="form-group">
 										<label>Matricule</label>

@@ -33,12 +33,12 @@
 			   <div class="col-md-2"></div>
 			   <div class="col-md-8">
 				<div class="panel panel-default">
-					<div class="panel-heading">Génere Ticket</div>
+					<div class="panel-heading">Génerer des Tickets</div>
 					<div class="panel-body">
 						
 
 
-							   <form  action="/ges_consultation/TicketServlet" method="post" >
+							   <form  action="/ges_consultation/SevTicket" method="post" >
 							        <input type="hidden" name="id" value="0">
 									<div class="form-group">
 										<label>Code</label>
@@ -133,7 +133,6 @@
 							<tbody>
 					       <c:choose>
 	           
-	           
 									 <c:when test="${empty listeMedecins}">
 					   						<div class="alert alert-danger">liste vide</div>
 					 				 </c:when>
@@ -142,15 +141,13 @@
 										      
 										      
 										      <tr>
-										      		        
-
 											    <td>${l.code}</td>
 											    <td>${l.datePrise}</td>
 											    <td>${l.patient.nom}</td>
 											    <td>${l.specialite.tarif}</td>
 											    <td>${l.specialite.nom}</td>
 											   
-												<td><a href="/hospital/TicketServlet?id=${l.id}&ins=delete" 
+												<td><a href="/hospital/SevTicket?id=${l.id}&ins=delete" 
 												class="btn btn-danger" >
 												<i class="glyphicon glyphicon-trash"></i></a> </td>
 							
